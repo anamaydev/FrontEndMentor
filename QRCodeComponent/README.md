@@ -18,8 +18,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/anamaydev/FrontEndMentor/tree/main/QRCodeComponent](https://github.com/anamaydev/FrontEndMentor/tree/main/QRCodeComponent)
+- Live Site URL: [https://anamaydev.github.io/FrontEndMentor/QRCodeComponent/index.html](https://anamaydev.github.io/FrontEndMentor/QRCodeComponent/index.html)
 
 ## My process
 
