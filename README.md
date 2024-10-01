@@ -5,4 +5,4 @@
 [https://anamaydev.github.io/FrontEndMentor/QRCodeComponent/index.html](https://anamaydev.github.io/FrontEndMentor/QRCodeComponent/index.html)
 
 ### 2. Blog Preview Card
-[https://anamaydev.github.io/FrontEndMentor/QRCodeComponent/index.html](https://anamaydev.github.io/FrontEndMentor/QRCodeComponent/index.html)
+[https://anamaydev.github.io/FrontEndMentor/blogPreviewCard/index.html](https://anamaydev.github.io/FrontEndMentor/blogPreviewCard/index.html)
