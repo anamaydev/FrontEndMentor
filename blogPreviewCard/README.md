@@ -22,11 +22,11 @@ Users should be able to:
 
 ### Screenshot
 **Desktop View**<br>
-![blogPreviewCardSolutionDesktop.png](assetsmages/blogPreviewCardSolutionDesktop.png)
+![blogPreviewCardSolutionDesktop.png](assets/images/blogPreviewCardSolutionDesktop.png)
 **Active Hover View**<br>
-![blogPreviewCardSolutionHover.png](assetsmages/blogPreviewCardSolutionHover.png)
+![blogPreviewCardSolutionHover.png](assets/images/blogPreviewCardSolutionHover.png)
 **Mobile View**<br>
-![blogPreviewCardSolutionMobile.png](assetsmages/blogPreviewCardSolutionMobile.png)
+![blogPreviewCardSolutionMobile.png](assets/images/blogPreviewCardSolutionMobile.png)
 
 ### Links
 - Solution URL: [https://github.com/anamaydev/FrontEndMentor/tree/main/blogPreviewCard](https://github.com/anamaydev/FrontEndMentor/tree/main/blogPreviewCard)
