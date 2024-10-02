@@ -8,4 +8,4 @@
 [https://anamaydev.github.io/FrontEndMentor/blogPreviewCard/index.html](https://anamaydev.github.io/FrontEndMentor/blogPreviewCard/index.html)
 
 ### 3. Social Links Profile
-[https://anamaydev.github.io/FrontEndMentor/QRCodeComponent/index.html](https://anamaydev.github.io/FrontEndMentor/socialLinksProfile/index.html)
+[https://anamaydev.github.io/FrontEndMentor/socialLinksProfile/index.html](https://anamaydev.github.io/FrontEndMentor/socialLinksProfile/index.html)
