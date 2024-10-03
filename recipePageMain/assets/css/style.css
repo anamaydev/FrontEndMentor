@@ -155,7 +155,7 @@ img{
 }
 
 .instructions-bullets>ol>li+li{
-    margin-top: var(--gap-200);
+    margin-top: var(--gap-100);
 }
 
 .instructions-bullets>ol{
