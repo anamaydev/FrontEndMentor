@@ -200,6 +200,10 @@ ul>li{
     width: 50%;
 }
 
+.right-col{
+    color: var(--brown-800);
+}
+
 .line{
     height:1px;
     border-width:0;
