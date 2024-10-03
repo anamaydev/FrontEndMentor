@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Young Sherif";
+    src: url("../fonts/young-serif/YoungSerif-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+:root{
+    --gap-1600: 8rem;
+    --gap-600: 3rem;
+    --gap-500: 2.5rem;
+    --gap-400: 2rem;
+    --gap-300: 1.5rem;
+    --gap-200: 1rem;
+    --gap-150: 0.75rem;
+    --gap-100: 0.5rem;
+
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+    --brown-800: #854632;
+    --white: #FFFFFF;
+}
+
+.text-present-1, .text-present-2, .text-present-3{
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.text-present-4, .text-present-4-bold{
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.text-present-1{
+    font-family: "Young Sherif", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.text-present-2{
+    font-family: "Young Sherif", serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.text-present-3{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.text-present-4{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+.text-present-4-bold{
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+
+html{
+    background-color: var(--stone-100);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 41rem;
+    margin-top: var(--gap-1600);
+    margin-bottom: var(--gap-1600);
+    padding: var(--gap-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-500);
+    background-color: var(--white);
+    border-radius: var(--gap-300);
+}
+
+.card h2{
+    color: var(--brown-800);
+}
+
+img{
+    height: auto;
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+img{
+    object-fit: fill;
+}
+
+.recipe-content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-400);
+    color: var(--stone-600);
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-300);
+    color: var(--stone-900);
+}
+
+.preparation{
+    padding: var(--gap-300);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-200);
+    border-radius: 0.75rem;
+    background-color: var(--rose-50);
+}
+
+.preparation-title{
+    color: var(--rose-800)
+}
+
+.ingredients, .instructions, .nutrition{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-300);
+}
+
+.preparation-bullets>ul>li+li, .ingredients-bullets>ul>li+li{
+    margin-top: var(--gap-100);
+}
+
+.preparation-bullets>ul, .ingredients-bullets>ul{
+    padding-left: var(--gap-300);
+}
+
+.preparation-bullets>ul>li, .ingredients-bullets>ul>li{
+    padding-left: var(--gap-200);
+}
+
+.instructions-bullets>ol>li+li{
+    margin-top: var(--gap-200);
+}
+
+.instructions-bullets>ol{
+    padding-left: var(--gap-300);
+}
+
+.instructions-bullets>ol>li{
+    padding-left: var(--gap-200);
+    color: var(--brown-800);
+}
+
+.instructions-bullets>ol>li>strong, .instructions-bullets>ol>li>span{
+    color: var(--stone-600);
+}
+
+ul>li{
+    color: var(--rose-800);
+}
+
+.list-item-text{
+    color: var(--stone-600);
+}
+
+.nutrition>.table{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-150);
+}
+
+.nutrition>.table>.nutrition-table-row{
+    display: flex;
+    flex-direction: row;
+    /*flex-basis: 14.25rem;*/
+    gap: var(--gap-200);
+}
+
+.nutrition-table-row{
+    padding: 0 var(--gap-400);
+}
+
+.nutrition-table-col{
+    width: 50%;
+}
+
+.line{
+    height:1px;
+    border-width:0;
+    background-color: var(--stone-150);
+}
+
+
+@media (max-width: 48rem) {
+    .card{
+        width: 33.5rem;
+    }
+}
+
+@media (max-width: 26.875rem) {
+
+    .card{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        border-radius: 0;
+    }
+
+    img{
+        height: 10.688rem;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .recipe-content{
+        margin: var(--gap-500) var(--gap-400);
+    }
+}
