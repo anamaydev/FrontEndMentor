@@ -28,9 +28,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/anamaydev/FrontEndMentor/tree/main/recipePageMain](https://github.com/anamaydev/FrontEndMentor/tree/main/productPreviewCard)
+- Solution URL: [https://github.com/anamaydev/FrontEndMentor/tree/main/productPreviewCard](https://github.com/anamaydev/FrontEndMentor/tree/main/productPreviewCard)
 
-- Live Site URL: [https://anamaydev.github.io/FrontEndMentor/recipePageMain/index.html](https://anamaydev.github.io/FrontEndMentor/productPreviewCard/index.html)
+- Live Site URL: [https://anamaydev.github.io/FrontEndMentor/productPreviewCard/index.html](https://anamaydev.github.io/FrontEndMentor/productPreviewCard/index.html)
 
 ## My process
 
