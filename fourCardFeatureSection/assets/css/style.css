@@ -205,30 +205,3 @@ main{
         grid-row: auto;
     }
 }
-
-@media only screen and (max-width: 550px) {
-    .header-title-light, .header-title-semi-bold{
-        font-size: 1.5rem;
-    }
-
-    .four-features-card{
-        padding: 5rem 2rem;
-        gap: 4.75rem;
-    }
-
-    .card-grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .card-supervisor,
-    .card-team-builder,
-    .card-karma,
-    .card-calculator {
-        grid-column: auto;
-        grid-row: auto;
-    }
-}
-
-
-
