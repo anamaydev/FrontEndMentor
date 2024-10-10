@@ -18,3 +18,6 @@
 
 ### 6. Four Card Feature Section
 [https://anamaydev.github.io/FrontEndMentor/fourCardFeatureSection/index.html](https://anamaydev.github.io/FrontEndMentor/fourCardFeatureSection/index.html)
+
+### 7. Testimonials Grid Section
+[https://anamaydev.github.io/FrontEndMentor/testimonialsGridSection/index.html](https://anamaydev.github.io/FrontEndMentor/testimonialsGridSection/index.html)
