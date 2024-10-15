@@ -66,22 +66,14 @@
   line-height: 1;
 }
 
-main{
-  background-color: var(--light-grayish-blue);
-  margin: 0;
-}
-
-html, body, main {
-  height: 100%;
+main {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-}
-
-main{
   display: flex;
   justify-content: center;
   align-items: center;
-  /*height: auto;*/
+  background-color: var(--light-grayish-blue);
 }
 
 .card{
@@ -196,7 +188,8 @@ main{
 
 @media (min-width: 640px) and (max-width: 1040px) {
   .testimonial-card-grid{
-    padding: 0;
+    padding-top: var(--space-863);
+    padding-bottom: var(--space-863);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 80%;
@@ -227,6 +220,10 @@ main{
 }
 
 @media  (min-width: 1041px){
+  body{
+    height: 100%;
+  }
+  
   .testimonial-card-grid{
     width: 80%;
     padding: 0;
