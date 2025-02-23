@@ -156,11 +156,9 @@
   .testimonial-container{
     grid-template-columns: repeat(auto-fit, minmax(225px, 4fr));
     grid-template-rows: repeat(2, 1fr);
+    margin: var(--spacing-1450) auto;
     max-width: 1110px;
     width: 90%;
-    margin-top: var(--spacing-1450);
-    margin-left: auto;
-    margin-right: auto;
   }
   
   .testimonial:first-child{
