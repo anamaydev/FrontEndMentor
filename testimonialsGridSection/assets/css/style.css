@@ -15,6 +15,7 @@
 }
 
 :root{
+  --spacing-1450: 7.5rem;     /* 120px */
   --spacing-863: 4.438rem;    /* 71px */
   --spacing-400: 2rem;        /* 32px */
   --spacing-375: 1.875rem;    /* 30px */
@@ -43,22 +44,34 @@
 }
 
 .testimonial-container{
-  font-family: 'Barlow Semi Condensed', sans-serif;
   display: grid;
+  gap: var(--spacing-300);
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
   grid-auto-rows: auto;
-  gap: var(--spacing-300);
   margin: var(--spacing-863) var(--spacing-300);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.testimonial__quote{
+  position: absolute;
+  top: 0;
+  right: var(--spacing-300);
 }
 
 .testimonial{
-  padding: var(--spacing-325) var(--spacing-400) var(--spacing-400);
   border-radius: 0.5rem;
+  padding: var(--spacing-325) var(--spacing-400) var(--spacing-400);
 }
 
 .testimonial:first-child{
   background-color: var(--moderate-violet);
   color: var(--white);
+  position: relative;
+}
+
+.testimonial__title--highlighted{
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial:nth-child(2){
@@ -109,7 +122,7 @@
   line-height: 1.38;
   opacity: 70%;
 }
-/*                  724                   1080*/
+
 @media (min-width: 45.25rem) and (max-width: 67.5rem){
   .testimonial-container{
     grid-template-columns: repeat(auto-fit, minmax(225px, 3fr));
@@ -120,6 +133,11 @@
     grid-row: span 1;
   }
   
+  .testimonial__quote{
+    position: absolute;
+    top: 0;
+    right: 5rem;
+  }
   .testimonial:nth-child(2){
     grid-column: 1/span 1;
     grid-row: 2/span 1;
@@ -127,7 +145,6 @@
   
   .testimonial:nth-child(4){
     grid-column: 2/span 2;
-    /*grid-row: 2/span 1;*/
   }
   
   .testimonial:last-child{
@@ -139,11 +156,9 @@
   .testimonial-container{
     grid-template-columns: repeat(auto-fit, minmax(225px, 4fr));
     grid-template-rows: repeat(2, 1fr);
-    /*max-width: 1110px;*/
-    /*width: 80%;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    max-width: 90%;
+    max-width: 1110px;
+    width: 90%;
+    margin-top: var(--spacing-1450);
     margin-left: auto;
     margin-right: auto;
   }
@@ -151,6 +166,12 @@
   .testimonial:first-child{
     grid-column: 1/3;
     grid-row: span 1;
+  }
+  
+  .testimonial__quote{
+    position: absolute;
+    top: 0;
+    right: 5rem;
   }
   
   .testimonial:nth-child(2){
