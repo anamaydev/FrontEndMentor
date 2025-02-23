@@ -41,14 +41,16 @@
 
 .testimonial-page{
   background-color: var(--light-grayish-blue);
+  padding: var(--spacing-300);
 }
 
 .testimonial-container{
   display: grid;
   gap: var(--spacing-300);
-  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: auto;
-  margin: var(--spacing-863) var(--spacing-300);
+  /*margin: var(--spacing-863) var(--spacing-300);*/
+  margin: 0 auto;
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
