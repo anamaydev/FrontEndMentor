@@ -153,6 +153,12 @@
 }
 
 @media (min-width: 67.5rem){
+  .testimonial-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
   .testimonial-container{
     grid-template-columns: repeat(auto-fit, minmax(225px, 4fr));
     grid-template-rows: repeat(2, 1fr);
