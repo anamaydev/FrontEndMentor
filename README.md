@@ -17,7 +17,7 @@
 [https://anamaydev.github.io/FrontEndMentor/product-preview-card/index.html](https://anamaydev.github.io/FrontEndMentor/product-preview-card/index.html)
 
 ### 6. Four Card Feature Section
-[https://anamaydev.github.io/FrontEndMentor/four-card-featureSection/index.html](https://anamaydev.github.io/FrontEndMentor/four-card-feature-section/index.html)
+[https://anamaydev.github.io/FrontEndMentor/four-card-feature-section/index.html](https://anamaydev.github.io/FrontEndMentor/four-card-feature-section/index.html)
 
 ### 7. Testimonials Grid Section
-[https://anamaydev.github.io/FrontEndMentor/testimonials-grid-section/index.html](https://anamaydev.github.io/FrontEndMentor/testimonials-grid-section/index.html)
+[https://anamaydev.github.io/FrontEndMentor/testimonial-grid-section/index.html](https://anamaydev.github.io/FrontEndMentor/testimonial-grid-section/index.html)
