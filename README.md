@@ -21,3 +21,6 @@
 
 ### 7. Testimonials Grid Section
 [https://anamaydev.github.io/FrontEndMentor/testimonial-grid-section/index.html](https://anamaydev.github.io/FrontEndMentor/testimonial-grid-section/index.html)
+
+### 8. Meet Landing Page
+[https://anamaydev.github.io/FrontEndMentor/meet-landing-page/index.html](https://anamaydev.github.io/FrontEndMentor/meet-landing-page/index.html)
