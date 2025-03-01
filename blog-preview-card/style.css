@@ -70,7 +70,7 @@
     display: inline-block;
     align-self: flex-start;
     text-decoration: none;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     font-weight: 800;
     padding: var(--spacing-50) var(--spacing-150);
     background-color: var(--color-yellow);
@@ -79,7 +79,7 @@
 }
 
 .course-card__publish-date{
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     font-weight: 500;
     color: var(--color-gray-950);
 }
