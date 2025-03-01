@@ -325,7 +325,6 @@
     font-size: var(--font-size-xl);
   }
   
-  
   .page-footer{
     background-image: url("../images/tablet/image-footer.jpg");
   }
@@ -359,6 +358,8 @@
   .features{
     max-width: 70rem;
     margin: 0 auto;
+    padding-top: var(--spacing-700);
+    padding-bottom: var(--spacing-700);
   }
   
   .page-footer{
