@@ -3,29 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="assetsavicon-32x32.png">
-  
   <title>Frontend Mentor | Meet landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-
-  Download v1.3
-  What is it?
-
-  01
-  Built for modern use
-
-  Smarter meetings, all in one place
-
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
-
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-  Download v1.3
+<body class="landing-page">
+  <nav class="nav">
+    <img src="./assets/images/logo.svg" alt="#" class="nav__logo">
+  </nav>
+  <section class="landing-hero">
+<!--    <div class="landing-hero__images"></div>-->
+    <img src="./assets/images/desktop/image-hero-left.png" alt="" class="landing-hero__left-image">
+    <img src="./assets/images/desktop/image-hero-right.png" alt="" class="landing-hero__right-image">
+    <img src="./assets/images/tablet/image-hero.png" alt="" class="landing-hero__combined-image">
+    <div class="landing-hero__body">
+      <h1 class="landing-hero__title">Group Chat <br> for Everyone</h1>
+      <p class="landing-hero__description">
+        Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+      </p>
+      <div class="landing-hero__buttons">
+        <a href="#" class="btn">Download <span class="btn__download-first">v1.3</span></a>
+        <a href="#" class="btn landing-hero__info-btn">What is it?</a>
+      </div>
+    </div>
+  </section>
+  <main class="features">
+    <div class="num">
+      <div class="num__line"></div>
+      <p class="num__circle">01</p>
+    </div>
+    <div class="features__gallery">
+      <img src="./assets/images/desktop/image-woman-in-videocall.jpg" alt="#" class="features__image">
+      <img src="./assets/images/desktop/image-women-videochatting.jpg" alt="#" class="features__image">
+      <img src="./assets/images/desktop/image-men-in-meeting.jpg" alt="#" class="features__image">
+      <img src="./assets/images/desktop/image-man-texting.jpg" alt="#" class="features__image">
+    </div>
+    <div class="features__info">
+      <p class="features__subheading">Built for modern use</p>
+      <h2 class="features__title">Smarter meetings, all in one place</h2>
+      <p class="features__description">
+        Send messages, share files, show your screen, and record your meetings — all in one workspace.
+        Control who can join with invite-only team access, data encryption, and data export.
+      </p>
+    </div>
+  </main>
+  <div class="num second-num">
+    <div class="num__line"></div>
+    <p class="num__circle">02</p>
+  </div>
+  <footer class="page-footer">
+    <div class="page-footer__content">
+      <h2 class="page-footer__title">Experience more together</h2>
+      <p class="page-footer__description">
+        Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+      </p>
+      <a href="#" class="btn page-footer__btn">Download <span class="btn__download-second">v1.3</span></a>
+    </div>
+  </footer>
 </body>
 </html>
