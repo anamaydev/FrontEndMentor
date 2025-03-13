@@ -3,8 +3,6 @@ todo:
 
 -->
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,8 +27,8 @@ todo:
         <p class="article__description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
       </div>
     
-      <div class="article__footer"> <!-- article__footer--dark -->
-        <div class="article__author">
+      <div class="article__footer"> <!-- init: hidden, article__footer--dark -->
+        <div class="article__author"> <!-- init: show -->
           <img class="article__author-avatar" src="./assets/images/avatar-michelle.jpg" alt="">
           <div class="article__author-details">
             <p class="article__author-name">Michelle Appleton</p>
@@ -38,7 +36,7 @@ todo:
           </div>
         </div>
       
-        <div class="article__share article__footer-hidden">
+        <div class="article__share"> <!-- init: hide, hiding using js "article__footer-hidden" -->
           <p class="article__link-text">share</p>
           <div class="article__social-links">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">

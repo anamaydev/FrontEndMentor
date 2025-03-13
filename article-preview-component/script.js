@@ -1,37 +1,59 @@
 let articleFooter = document.querySelector(".article__footer");
 let authorProfile = document.querySelector(".article__author");
-let socialLinks = document.querySelector(".article__share");
+let socialLinksMobile = document.querySelector(".article__share");
 let shareButton = document.getElementById("share-toggle");
+let mobileView = false;
 
 
-function checkWindow(){
-  if(window.innerWidth < 500){
-    mobileView();
+// checkWidth() function checks the current width of the window
+function checkWidth(){
+  if(window.innerWidth < 780){
+    mobileView = true;
+    console.log("It's Mobile view");
+    console.log(`mobileView: ${mobileView}`);
   }else{
-    tabletView();
+    mobileView = false;
+    console.log("It's Desktop view");
+    console.log(`mobileView: ${mobileView}`);
   }
 }
 
-window.addEventListener("load", checkWindow);
-window.addEventListener("resize", checkWindow);
+/*
+* on loading the page, instantly
+*   show ==> profile block
+*   hide ==> social link
+*/
+window.addEventListener("load",()=>{
+  socialLinksMobile.classList.add("article__footer-hidden")
+  checkWidth();
+})
 
-// function toggle profile <--> social-links (mobile view)
-function mobileView(){
-  shareButton.addEventListener("change", ()=>{
-    console.log(shareButton.checked);
+/*
+* just to be safe
+* event listener (resize): calls checkWidth() function to check if it is a mobile view or not
+*/
+window.addEventListener("resize",checkWidth);
+
+/*
+* to hide footer use class ---> "article__footer-hidden"
+* to highlight footer with social links --> "article__footer--dark"
+*/
+shareButton.addEventListener("change", ()=>{
+  if(mobileView){
     if(shareButton.checked){
-      // articleFooter.classList.toggle("article__footer--dark");
+      authorProfile.classList.add("article__footer-hidden");
+      socialLinksMobile.classList.remove("article__footer-hidden");
       articleFooter.classList.add("article__footer--dark");
-      authorProfile.classList.toggle("article__footer-hidden");
-      socialLinks.classList.toggle("article__footer-hidden");
     }else{
+      authorProfile.classList.remove("article__footer-hidden");
+      socialLinksMobile.classList.add("article__footer-hidden");
       articleFooter.classList.remove("article__footer--dark");
-      authorProfile.classList.toggle("article__footer-hidden");
-      socialLinks.classList.toggle("article__footer-hidden");
     }
-  })
-}
-
-function tabletView(){
-  console.log("tab view enabled");
-}
+  }else{
+    console.log("----------- DESKTOP VIEW -----------");
+    /*
+    * todo:
+    *  social links pop up for desktop view
+    */
+  }
+})
