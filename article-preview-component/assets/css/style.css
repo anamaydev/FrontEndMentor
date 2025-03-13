@@ -1,15 +1,3 @@
-/*
-  todo:
-    [x] mobile cta
-    [x] set border-radius to image
-    [x] remove overflow: hidden from article
-    [ ] set links to icons
-    [x] js pop up for tab and desktop
-    [x] change media query from px --> rem
-    [x] custom variables
-*/
-
-
 :root{
   --color-white: #FFFFFF;
   --color-grey-900: #48556A;
