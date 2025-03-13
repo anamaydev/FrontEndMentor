@@ -2,7 +2,7 @@
   todo:
     [x] mobile cta
     [x] set border-radius to image
-    [ ] remove overflow: hidden from article
+    [x] remove overflow: hidden from article
     [ ] set links to icons
     [x] js pop up for tab and desktop
     [x] change media query from px --> rem
@@ -51,21 +51,11 @@
   margin: 0 auto;
   background-color: var(--color-white);
   font-family: "Manrope", sans-serif;
-  /*overflow: hidden;*/
-  
-  /* only for mobile view ( < 480px) */
   max-width: 26.125rem;
+  box-shadow: 0 0 50px -25px var(--color-grey-400);
 }
 
-/*----- article image -----*/
-/*.article__image-wrapper{*/
-/*  width: 100%;*/
-/*  height: 200px;*/
-/*  overflow: hidden;*/
-/*}*/
-
 .article__image{
-  /*max-width: 100%;*/
   height: 200px;
   width: 100%;
   object-fit: cover;
@@ -77,7 +67,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-600);
-  /*padding: 0 var(--spacing-400) 1.125rem;*/
 }
 
 .article__content{
@@ -182,12 +171,21 @@
   
   border-radius: 50%;
   background-color: var(--color-grey-200);
+  
+  transition-property: transform, background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+}
+
+.article__share-button:hover{
+  background-color: var(--color-grey-500);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .article__share-input{
   -webkit-appearance: none;
   display: none;
-  /*position: relative;*/
 }
 
 .article__share-icon{
@@ -248,15 +246,11 @@
   flex-shrink: 0;
 }
 
-.article__share-button:hover{
-  background-color: var(--color-grey-500);
-}
 
 .article__share-button:hover .article__share-icon path{
   fill: var(--color-white);
 }
 
-/* stopped working coz they ain't immediate siblings anymore*/
 .article__share-input:checked + .article__share-button{
   background-color: var(--color-grey-500);
 }
@@ -265,12 +259,27 @@
   fill: var(--color-white);
 }
 
-                  /*  672px */
+.social-media-button{
+  border: none;
+  background: none;
+  width: auto;
+  padding: 0;
+  cursor: pointer;
+  
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+}
+
+.social-media-button:hover{
+  transform: scale(1.2);
+}
+
+/*                 672px    */
 @media (min-width: 42rem){
   .article{
     grid-template-columns: 229px 1fr;
     width: 79.16%;
-    /*width: 75%;*/
     max-width: 45.625rem;
   }
   
