@@ -8,18 +8,10 @@ let mobileView = false;
 
 // checkWidth() function checks the current width of the window
 function checkWidth(){
-  if(window.innerWidth < 672){
-    mobileView = true;
-    console.log("It's Mobile view");
-    console.log(`mobileView: ${mobileView}`);
-  }else{
-    mobileView = false;
-    console.log("It's Desktop view");
-    console.log(`mobileView: ${mobileView}`);
-  }
+  mobileView = window.innerWidth < 672;
 }
 
-
+// defaultShareState() function sets the website to default state
 function defaultShareState(){
   // share tablet pop up: hidden
   socialLinksTablet.classList.remove("article__share-tablet--visible");
@@ -75,12 +67,6 @@ shareButton.addEventListener("change", ()=>{
       articleFooter.classList.remove("article__footer--dark");
     }
   }else{
-    console.log("----------- DESKTOP VIEW -----------");
-    /*
-    * todo:
-    *  social links pop up for desktop view
-    */
-
     if(shareButton.checked){
       socialLinksTablet.classList.add("article__share-tablet--visible");
     }else{
