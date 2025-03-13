@@ -164,14 +164,11 @@
 .article__share-button{
   height: 2rem;
   width: 2rem;
-  
   display: flex;
   justify-content: center;
   align-items: center;
-  
   border-radius: 50%;
   background-color: var(--color-grey-200);
-  
   transition-property: transform, background-color;
   transition-duration: 0.25s;
   transition-timing-function: ease;
@@ -246,7 +243,6 @@
   flex-shrink: 0;
 }
 
-
 .article__share-button:hover .article__share-icon path{
   fill: var(--color-white);
 }
@@ -260,12 +256,7 @@
 }
 
 .social-media-button{
-  border: none;
-  background: none;
-  width: auto;
-  padding: 0;
   cursor: pointer;
-  
   transition-property: transform;
   transition-duration: 0.25s;
   transition-timing-function: ease;
