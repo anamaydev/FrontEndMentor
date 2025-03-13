@@ -257,7 +257,8 @@
 /*                 672px    */
 @media (min-width: 42rem){
   .article{
-    grid-template-columns: 229px 1fr;
+    /*grid-template-columns: 229px 1fr;*/
+    grid-template-columns: 1fr 1.7fr;
     width: 79.16%;
     max-width: 45.625rem;
   }
