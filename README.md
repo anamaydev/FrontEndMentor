@@ -24,3 +24,6 @@
 
 ### 8. Meet Landing Page
 [https://anamaydev.github.io/FrontEndMentor/meet-landing-page/index.html](https://anamaydev.github.io/FrontEndMentor/meet-landing-page/index.html)
+
+### 9. Article Preview Component
+[https://anamaydev.github.io/FrontEndMentor/article-preview-component/index.html](https://anamaydev.github.io/FrontEndMentor/article-preview-component/index.html)
