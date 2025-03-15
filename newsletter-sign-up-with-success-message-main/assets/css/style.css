@@ -1,0 +1,135 @@
+/*
+* todo:
+*   [ ] learn how to use gradient color
+*   [x] import font
+*   [x] custom variables
+*   [x] utility classes
+*/
+
+/* import font */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root{
+  /*  colors  */
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-grey: hsla(0, 0%, 58%, 1);
+  --color-blue-800: hsla(234, 29%, 20%, 1);
+  --color-blue-700: hsla(234, 17%, 26%, 1);
+  --color-red: hsla(4, 100%, 67%, 1);
+  /* todo: add gradient color */
+  
+  /*  spacing  */
+  --spacing-100: 0.5rem;    /*   8px  */
+  --spacing-200: 1rem;      /*   16px  */
+  --spacing-300: 1.5rem;    /*   24px  */
+  --spacing-400: 2rem;      /*   32px  */
+  --spacing-500: 2.5rem;    /*   40px  */
+  --spacing-600: 3rem;      /*   48px  */
+  --spacing-800: 4rem;      /*   64px  */
+  --spacing-900: 4.5rem;    /*   72px  */
+  --spacing-1300: 6.5rem;   /*  104px  */
+}
+
+/* utility classes */
+.text-preset-1{
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.text-preset-1-mobile{
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.text-preset-2-bold{
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.text-preset-2-regular{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.text-preset-3{
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.sign-up{
+  display: grid;
+  gap: var(--spacing-500);
+}
+
+.sign-up__image{
+  max-width: 100%;
+  width: 100%;
+}
+
+.sign-up__content{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-500);
+  font-family: "Roboto", sans-serif;
+}
+
+.sign-up__benefits{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+/*::marker{*/
+/*  content: url("../images/icon-list.svg");*/
+/*}*/
+
+/*.sign-up__item{*/
+/*  padding-left: var(--spacing-200);*/
+/*}*/
+
+.sign-up__list{
+  padding-left: 0;
+}
+
+.sign-up__item{
+  display: flex;
+  align-items: center;
+}
+
+.sign-up__item::marker{
+  content: '';
+}
+
+.sign-up__item::before{
+  display: inline-block;
+  flex-shrink: 0;
+  align-self: flex-start;
+  content: url("../images/icon-list.svg");
+  height: 20px;
+  width: 20px;
+  margin-right: var(--spacing-200);
+  position: relative;
+  top: 0.125rem;
+}

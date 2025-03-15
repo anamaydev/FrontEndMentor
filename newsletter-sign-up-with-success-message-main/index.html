@@ -1,0 +1,91 @@
+<!--
+  todo:
+    - set alt to image tag
+    - add JS file
+    [x] add CSS file
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="main-page">
+<section class="sign-up">
+<!--  <div class="sign-up__image-wrapper">-->
+<!--    <img class="sign-up__image" src="./assets/images/" alt="#">-->
+<!--  </div>-->
+  <picture class="sign-up__image-wrapper">
+    <source media="(min-width: 608px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg">
+    <source srcset="./assets/images/illustration-sign-up-mobile.svg">
+    <img class="sign-up__image" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+  </picture>
+  <div class="sign-up__content text-preset-2-regular">
+    <div class="sign-up__benefits">
+      <h1 class="sign-up__title text-preset-1-mobile">Stay Updated</h1>
+      <p class="sign-up__description">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="sign-up__list">
+        <li class="sign-up__item">Product discovery and building what matters</li>
+        <li class="sign-up__item">Measuring to ensure updates are a success</li>
+        <li class="sign-up__item">And much more!</li>
+      </ul>
+    </div>
+    <form id="sign-up-form" class="sign-up__form" action="/">
+      <div class="sign-up__form-control">
+        <label for="email" class="sign-up__label">Email address</label>
+        <input id="email" type="email" name="email" class="sign-up__input">
+        <span class="sign-up__error-message"></span>
+      </div>
+      <button id="sign-up-btn" class="sign-up__btn">Submit</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---->
+<!--<body class="main-page">-->
+<!--<section class="sign-up">-->
+<!--  <div class="sign-up__image-wrapper">-->
+<!--    <img class="ign-up__image" src="#" alt="#">-->
+<!--  </div>-->
+<!--  <div class="sign-up__content">-->
+<!--    <div class="sign-up__benefits">-->
+<!--      <h1>Stay Updated</h1>-->
+<!--      <p>Join 60,000+ product managers receiving monthly updates on:</p>-->
+<!--      <ul>-->
+<!--        <li>Product discovery and building what matters</li>-->
+<!--        <li>Measuring to ensure updates are a success</li>-->
+<!--        <li>And much more!</li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--    <form id="sign-up-form" class="sign-up-form" action="/">-->
+<!--      <div class="form-control">-->
+<!--        <label for="email">Email address</label>-->
+<!--        <input id="email" type="email" name="email">-->
+<!--        <span ></span>-->
+<!--      </div>-->
+<!--      <button id="sign-up-form__btn">Submit</button>-->
+<!--    </form>-->
+<!--  </div>-->
