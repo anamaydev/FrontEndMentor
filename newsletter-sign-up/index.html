@@ -8,34 +8,49 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="main-page">
-<section class="sign-up">
-
-  <picture class="sign-up__image-wrapper">
-    <source media="(min-width: 769px)"
-            srcset="./assets/images/illustration-sign-up-desktop.svg">
-    <source srcset="./assets/images/illustration-sign-up-mobile.svg">
-    <img class="sign-up__image" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-  </picture>
-  <div class="sign-up__content text-preset-2-regular">
-    <div class="sign-up__benefits">
-      <h1 class="sign-up__title text-preset-1-mobile">Stay updated!</h1>
-      <p class="sign-up__description">Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul class="sign-up__list">
-        <li class="sign-up__item">Product discovery and building what matters</li>
-        <li class="sign-up__item">Measuring to ensure updates are a success</li>
-        <li class="sign-up__item">And much more!</li>
-      </ul>
-    </div>
-    <form id="sign-up-form" class="sign-up__form text-preset-2-bold" action="/">
-      <div class="sign-up__form-control">
-        <label for="email" class="sign-up__label text-preset-3">Email address</label>
-        <input id="email" class="sign-up__input" type="email" name="email" placeholder="email@company.com">
-        <span class="sign-up__error-message--show text-preset-3">Valid email required</span>
+<!-- sign-up: sign-up-page; success-card: success-page-->
+<body class="success-page">
+  <main>
+    <section class="sign-up hidden" >
+      <picture class="sign-up__image-wrapper">
+        <source media="(min-width: 769px)"
+                srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <source srcset="./assets/images/illustration-sign-up-mobile.svg">
+        <img class="sign-up__image" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+      </picture>
+      <div class="sign-up__content text-preset-2-regular">
+        <div class="sign-up__benefits">
+          <h1 class="sign-up__title text-preset-1-mobile">Stay updated!</h1>
+          <p class="sign-up__description">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="sign-up__list">
+            <li class="sign-up__item">Product discovery and building what matters</li>
+            <li class="sign-up__item">Measuring to ensure updates are a success</li>
+            <li class="sign-up__item">And much more!</li>
+          </ul>
+        </div>
+        <form id="sign-up-form" class="sign-up__form text-preset-2-bold" action="/">
+          <div class="sign-up__form-control">
+            <label for="email" class="sign-up__label text-preset-3">Email address</label>
+            <!-- add upon invalid email: sign-up__input--invalid -->
+            <input id="email" class="sign-up__input text-preset-2-regular" type="email" name="email" placeholder="email@company.com">
+            <!-- display upon invalid email: sign-up__error-message--show -->
+            <span class="sign-up__error-message text-preset-3">Valid email required</span>
+          </div>
+          <button id="sign-up-btn" class="sign-up__btn">Subscribe to monthly newsletter</button>
+        </form>
       </div>
-      <button id="sign-up-btn" class="sign-up__btn">Subscribe to monthly newsletter</button>
-    </form>
-  </div>
-</section>
+    </section>
+    <section class="success-card">
+      <img src="./assets/images/icon-success.svg" alt="" class="success-card__icon">
+      <h1 class="success-card__title text-preset-1-mobile">Thanks for subscribing!</h1>
+      <p class="success-card__message text-preset-2-regular">
+        A confirmation email has been sent to
+        <span class="success-card__email text-preset-2-bold">ash@loremcompany.com</span>
+        . Please open it and click
+        the button inside to confirm your subscription.
+      </p>
+      <button id="success-btn" class="sign-up__btn text-preset-2-bold">Dismiss message</button>
+    </section>
+  </main>
 </body>
 </html>
