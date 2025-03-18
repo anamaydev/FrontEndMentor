@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <!-- sign-up: sign-up-page; success-card: success-page-->
-<body class="success-page">
+<body class="sign-up-page">
+<!--<body class="success-page">-->
   <main>
-    <section class="sign-up hidden" >
+    <!--    add class hidden to hide-->
+    <section class="sign-up">
       <picture class="sign-up__image-wrapper">
         <source media="(min-width: 769px)"
                 srcset="./assets/images/illustration-sign-up-desktop.svg">
@@ -28,19 +30,20 @@
             <li class="sign-up__item">And much more!</li>
           </ul>
         </div>
-        <form id="sign-up-form" class="sign-up__form text-preset-2-bold" action="/">
+        <form id="sign-up-form" class="sign-up__form text-preset-2-bold" action="/" novalidate>
           <div class="sign-up__form-control">
             <label for="email" class="sign-up__label text-preset-3">Email address</label>
             <!-- add upon invalid email: sign-up__input--invalid -->
-            <input id="email" class="sign-up__input text-preset-2-regular" type="email" name="email" placeholder="email@company.com">
+            <input id="email" class="sign-up__input text-preset-2-regular" type="email" name="email" placeholder="email@company.com" autocomplete = "email">
             <!-- display upon invalid email: sign-up__error-message--show -->
-            <span class="sign-up__error-message text-preset-3">Valid email required</span>
+            <span class="sign-up__error-message text-preset-3"></span> <!-- Valid email required -->
           </div>
-          <button id="sign-up-btn" class="sign-up__btn">Subscribe to monthly newsletter</button>
+          <button id="sign-up-btn" class="cta">Subscribe to monthly newsletter</button>
         </form>
       </div>
     </section>
-    <section class="success-card">
+<!--    add class hidden to hide-->
+    <section class="success-card hidden">
       <img src="./assets/images/icon-success.svg" alt="" class="success-card__icon">
       <h1 class="success-card__title text-preset-1-mobile">Thanks for subscribing!</h1>
       <p class="success-card__message text-preset-2-regular">
@@ -49,8 +52,9 @@
         . Please open it and click
         the button inside to confirm your subscription.
       </p>
-      <button id="success-btn" class="sign-up__btn text-preset-2-bold">Dismiss message</button>
+      <button id="success-btn" class="cta text-preset-2-bold">Dismiss message</button>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
