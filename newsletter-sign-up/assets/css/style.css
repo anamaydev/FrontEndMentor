@@ -184,7 +184,7 @@
 }
 
 .cta{
-  padding: var(--spacing-200) var(--spacing-600);
+  padding: var(--spacing-200) var(--spacing-500);
   border-radius: 0.5rem;
   color: var(--color-white);
   background-color: var(--color-blue-800);
@@ -237,7 +237,6 @@
   display: none;
 }
 
-/*@media (min-width: 768px){  */
 @media (min-width: 480px){
   .sign-up-page{
     background-color: var(--color-blue-700);
@@ -281,7 +280,6 @@
   .success-page{
     background-color: var(--color-blue-700);
   }
-
 }
 
 @media (min-width: 769px){

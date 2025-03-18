@@ -27,3 +27,6 @@
 
 ### 9. Article Preview Component
 [https://anamaydev.github.io/FrontEndMentor/article-preview-component/index.html](https://anamaydev.github.io/FrontEndMentor/article-preview-component/index.html)
+
+### 10. Newsletter Sign Up with Success message 
+[https://anamaydev.github.io/FrontEndMentor/newsletter-sign-up/index.html](https://anamaydev.github.io/FrontEndMentor/newsletter-sign-up/index.html)
