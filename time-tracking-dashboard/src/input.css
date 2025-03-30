@@ -88,7 +88,7 @@
 .dashboard{
     display: grid;
     gap: var(--spacing-300);
-    /*width: 93%;*/
+    max-width: 1116px;
     /*margin: 0 auto;*/
 }
 
@@ -123,8 +123,12 @@
 }
 
 .user-card__link{
-    color: var(--color-white);
+    color: var(--color-purple-500);
     text-decoration: none;
+}
+
+.user-card__link--active{
+    color: var(--color-white);
 }
 
 .activity-card-wrapper{
@@ -151,7 +155,8 @@
     z-index: 2;
     padding: var(--spacing-300);
     background-color: var(--color-navy-900);
-    border-radius: 0.9375rem; /* 15px */
+    border-top-left-radius: 0.9375rem;
+    border-top-right-radius: 0.9375rem;
     gap: var(--spacing-100);
 }
 
