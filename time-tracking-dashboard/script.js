@@ -6,6 +6,9 @@ function init(){
   const weeklyBtn = document.getElementById("weekly-btn");
   const monthlyBtn = document.getElementById("monthly-btn");
 
+  //user card
+  const userCard = document.getElementById("user-card");
+
   // work hours
   const workCurrent = document.getElementById("work-current");
   const workPrevious = document.getElementById("work-previous");
@@ -35,15 +38,14 @@ function init(){
   async function getData(){
     try{
       const response = await fetch('./data.json');
-      console.log(response);
       dataCache = await response.json();
-      console.log(dataCache);
     }catch (error){
       console.log(error.message);
     }
 
-    displayData('daily');
-    dailyBtn.classList.add('user-card__btn--active');
+    // displaying weekly data on loading
+    displayData('weekly');
+    weeklyBtn.classList.add('user-card__btn--active');
   }
 
   // displaying the data
@@ -129,8 +131,45 @@ function init(){
     monthlyBtn.classList.remove('user-card__btn--active');
   }
 
+  // loading animation
+  function loadingAnimation(){
+    let windowHalfHeight = window.innerHeight/2;
+    let userCardHalfHeight = userCard.offsetHeight/2;
+
+    // activity cards initial state => opacity none
+    gsap.set('.dashboard .activity-card-wrapper', {opacity: 0});
+    // user card initial state => shift vertically mid
+    gsap.set(userCard, {y: windowHalfHeight - userCardHalfHeight, opacity: 0});
+
+    // creating timeline
+    const step = gsap.timeline();
+
+    // step 1: shift userCard back to original position
+    step.to(userCard, {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+    })
+
+    // step 2: show activity cards one by one
+    step.to('.dashboard .activity-card-wrapper', {
+      opacity: 1,
+      stagger: 0.2,
+      scale: 1.05,
+    })
+
+    // step 3: scale back to original
+    step.to('.dashboard .activity-card-wrapper', {
+      scale: 1,
+      stagger: 0.2,
+    })
+  }
+
   // calling getData function on page loading
-  window.addEventListener('load', ()=> getData());
+  window.addEventListener('load', ()=> {
+    loadingAnimation();
+    getData()
+  });
 
   dailyBtn.addEventListener('click', ()=> {
     displayData('daily');
