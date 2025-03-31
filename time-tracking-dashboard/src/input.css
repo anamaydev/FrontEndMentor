@@ -122,12 +122,16 @@
     justify-content: space-around;
 }
 
-.user-card__link{
+.user-card__btn {
+    background: none;
+    border: none;
     color: var(--color-purple-500);
-    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
 }
 
-.user-card__link--active{
+.user-card__btn--active{
     color: var(--color-white);
 }
 

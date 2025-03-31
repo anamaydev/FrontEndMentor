@@ -23,9 +23,9 @@
       </div>
     </div>
     <div class="user-card__nav">
-      <a class="user-card__link user-card__link--daily text-preset-5-regular" href="#">Daily</a>
-      <a class="user-card__link user-card__link--weekly text-preset-5-regular" href="#">Weekly</a>
-      <a class="user-card__link user-card__link--monthly text-preset-5-regular" href="#">Monthly</a>
+      <button id="daily-btn" class="user-card__btn user-card__link--daily text-preset-5-regular">Daily</button>
+      <button id="weekly-btn" class="user-card__btn user-card__link--weekly text-preset-5-regular">Weekly</button>
+      <button id="monthly-btn" class="user-card__btn user-card__link--monthly text-preset-5-regular">Monthly</button>
     </div>
   </div> <!-- user card end -->
   
@@ -38,8 +38,8 @@
         <svg class="activity-card__menu-icon" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="activity-card__status">
-        <p class="activity-card__current text-preset-3">32hrs</p>
-        <p class="activity-card__previous text-preset-6">Last Week - 36hrs</p>
+        <p id="work-current" class="activity-card__current text-preset-3">--</p>
+        <p id="work-previous" class="activity-card__previous text-preset-6">--</p>
       </div>
     </div>
   </div> <!-- work card end -->
@@ -53,8 +53,8 @@
         <svg class="activity-card__menu-icon" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="activity-card__status">
-        <p class="activity-card__current text-preset-3">10hrs</p>
-        <p class="activity-card__previous text-preset-6">Last Week - 36hrs</p>
+        <p id="play-current" class="activity-card__current text-preset-3">--</p>
+        <p id="play-previous" class="activity-card__previous text-preset-6">--</p>
       </div>
     </div>
   </div> <!-- play card end -->
@@ -68,8 +68,8 @@
         <svg class="activity-card__menu-icon" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="activity-card__status">
-        <p class="activity-card__current text-preset-3">4hrs</p>
-        <p class="activity-card__previous text-preset-6">Last Week - 7hrs</p>
+        <p id="study-current" class="activity-card__current text-preset-3">--</p>
+        <p id="study-previous" class="activity-card__previous text-preset-6">--</p>
       </div>
     </div>
   </div> <!-- study card end -->
@@ -83,8 +83,8 @@
         <svg class="activity-card__menu-icon" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="activity-card__status">
-        <p class="activity-card__current text-preset-3">4hrs</p>
-        <p class="activity-card__previous text-preset-6">Last Week - 5hrs</p>
+        <p id="exercise-current" class="activity-card__current text-preset-3">--</p>
+        <p id="exercise-previous" class="activity-card__previous text-preset-6">--</p>
       </div>
     </div>
   </div> <!-- exercise card end -->
@@ -98,8 +98,8 @@
         <svg class="activity-card__menu-icon" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="activity-card__status">
-        <p class="activity-card__current text-preset-3">5hrs</p>
-        <p class="activity-card__previous text-preset-6">Last Week - 10hrs</p>
+        <p id="social-current" class="activity-card__current text-preset-3">--</p>
+        <p id="social-previous" class="activity-card__previous text-preset-6">--</p>
       </div>
     </div>
   </div> <!-- social card end -->
@@ -113,12 +113,14 @@
         <svg class="activity-card__menu-icon" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="activity-card__status">
-        <p class="activity-card__current text-preset-3">2hrs</p>
-        <p class="activity-card__previous text-preset-6">Last Week - 2hrs</p>
+        <p id="self-care-current" class="activity-card__current text-preset-3">--</p>
+        <p id="self-care-previous" class="activity-card__previous text-preset-6">--</p>
       </div>
     </div>
   </div> <!-- self-care card end -->
   
 </main>
+
+<script src="script.js"></script>
 </body>
 </html>
