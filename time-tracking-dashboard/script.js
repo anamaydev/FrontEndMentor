@@ -46,76 +46,106 @@ function init(){
     dailyBtn.classList.add('user-card__btn--active');
   }
 
+  // displaying the data
   function displayData(requestedTimeFrame){
     dataCache.forEach((activity) => {
       const activityTitle = activity['title'];
       const activityTimeFrame = activity['timeframes'];
 
-      console.log(activityTitle);
-      console.log(activityTimeFrame);
-
       if(activityTitle === 'Work'){
-        console.log(activityTimeFrame[requestedTimeFrame]);
         workCurrent.innerText = `${activityTimeFrame[requestedTimeFrame].current}hrs`;
-        if(requestedTimeFrame === 'daily') workPrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else if(requestedTimeFrame === 'weekly') workPrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else workPrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        if(requestedTimeFrame === 'daily'){
+          workPrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else if(requestedTimeFrame === 'weekly'){
+          workPrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else{
+          workPrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
       }else if(activityTitle === 'Play'){
-        console.log(activityTimeFrame[requestedTimeFrame]);
         playCurrent.innerText = `${activityTimeFrame[requestedTimeFrame].current}hrs`;
-        if(requestedTimeFrame === 'daily') playPrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else if(requestedTimeFrame === 'weekly') playPrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else playPrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        if(requestedTimeFrame === 'daily'){
+          playPrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else if(requestedTimeFrame === 'weekly'){
+          playPrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else{
+          playPrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
       }else if(activityTitle === 'Study'){
-        console.log(activityTimeFrame[requestedTimeFrame]);
         studyCurrent.innerText = `${activityTimeFrame[requestedTimeFrame].current}hrs`;
-        if(requestedTimeFrame === 'daily') studyPrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else if(requestedTimeFrame === 'weekly') studyPrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else studyPrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        if(requestedTimeFrame === 'daily'){
+          studyPrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else if(requestedTimeFrame === 'weekly'){
+          studyPrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else{
+          studyPrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
       }else if(activityTitle === 'Exercise'){
-        console.log(activityTimeFrame[requestedTimeFrame]);
         exerciseCurrent.innerText = `${activityTimeFrame[requestedTimeFrame].current}hrs`;
-        if(requestedTimeFrame === 'daily') exercisePrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else if(requestedTimeFrame === 'weekly') exercisePrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else exercisePrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        if(requestedTimeFrame === 'daily'){
+          exercisePrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else if(requestedTimeFrame === 'weekly'){
+          exercisePrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else{
+          exercisePrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
       }else if(activityTitle === 'Social'){
-        console.log(activityTimeFrame[requestedTimeFrame]);
         socialCurrent.innerText = `${activityTimeFrame[requestedTimeFrame].current}hrs`;
-        if(requestedTimeFrame === 'daily') socialPrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else if(requestedTimeFrame === 'weekly') socialPrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else socialPrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        if(requestedTimeFrame === 'daily'){
+          socialPrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else if(requestedTimeFrame === 'weekly'){
+          socialPrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else{
+          socialPrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
       }else{
-        console.log(activityTimeFrame[requestedTimeFrame]);
         selfCareCurrent.innerText = `${activityTimeFrame[requestedTimeFrame].current}hrs`;
-        if(requestedTimeFrame === 'daily') selfCarePrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else if(requestedTimeFrame === 'weekly') selfCarePrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
-        else selfCarePrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        if(requestedTimeFrame === 'daily'){
+          selfCarePrevious.innerText = `Yesterday - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else if(requestedTimeFrame === 'weekly'){
+          selfCarePrevious.innerText = `Last Week - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
+        else{
+          selfCarePrevious.innerText = `Last Month - ${activityTimeFrame[requestedTimeFrame].previous}hrs`;
+        }
       }
     })
   }
 
+  // removing nav buttons active state
   function removeActiveState(){
     dailyBtn.classList.remove('user-card__btn--active');
     weeklyBtn.classList.remove('user-card__btn--active');
     monthlyBtn.classList.remove('user-card__btn--active');
   }
 
-  window.addEventListener('load', ()=>{
-    getData();
-  });
+  // calling getData function on page loading
+  window.addEventListener('load', ()=> getData());
 
   dailyBtn.addEventListener('click', ()=> {
-    displayData('daily')
+    displayData('daily');
     removeActiveState();
     dailyBtn.classList.add('user-card__btn--active');
   });
+
   weeklyBtn.addEventListener('click', ()=> {
-    displayData('weekly')
+    displayData('weekly');
     removeActiveState();
     weeklyBtn.classList.add('user-card__btn--active');
   });
+
   monthlyBtn.addEventListener('click',()=> {
-    displayData('monthly')
+    displayData('monthly');
     removeActiveState();
     monthlyBtn.classList.add('user-card__btn--active');
   });
