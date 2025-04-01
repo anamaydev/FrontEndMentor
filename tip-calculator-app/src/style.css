@@ -1,0 +1,317 @@
+/* css custom variables*/
+:root{
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-black: hsla(0, 0%, 0%, 1);
+  --color-grey-600: hsla(180, 25%, 32%, 1);
+  --color-grey-550: hsla(180, 18%, 40%, 1);
+  --color-grey-500: hsla(186, 14%, 43%, 1);
+  --color-grey-400: hsla(184, 14%, 56%, 1);
+  --color-grey-300: hsla(184, 19%, 68%, 1);
+  --color-grey-200: hsla(185, 41%, 84%, 1);
+  --color-grey-50: hsla(189, 41%, 97%, 1);
+  --color-green-900: hsla(183, 100%, 15%, 1);
+  --color-green-800: hsla(183, 85%, 21%, 1);
+  --color-green-750: hsla(183, 79%, 24%, 1);
+  --color-green-400: hsla(172, 67%, 45%, 1);
+  --color-green-200: hsla(173, 61%, 77%, 1);
+  --color-orange-400: hsla(13, 70%, 60%, 1);
+  
+  --spacing-1600: 8rem;     /* 128px */
+  --spacing-1500: 7.5rem;   /* 120px */
+  --spacing-1200: 6rem;     /*  96px */
+  --spacing-1000: 5rem;     /*  80px */
+  --spacing-600: 3rem;      /*  48px */
+  --spacing-400: 2rem;      /*  32px */
+  --spacing-300: 1.5rem;    /*  24px */
+  --spacing-200: 1rem;      /*  16px */
+  --spacing-100: 0.5rem;    /*   8px */
+}
+
+/* utility classes */
+.text-preset-2{
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 2rem;  /* 32px */
+  line-height: 1.47;
+  letter-spacing: -0.67px;
+}
+
+.text-preset-3{
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 1.5rem;  /* 24px */
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.text-preset-4{
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 1.25rem;  /* 20px */
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.text-preset-5{
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 1rem;  /* 16px */
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.text-preset-6{
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 0.8125rem;  /* 13px */
+  line-height: 1.46;
+  letter-spacing: 0;
+}
+
+.page{
+  background-color: var(--color-grey-200);
+}
+
+.app-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.app-nav{
+  margin-top: 50px;
+}
+
+.app{
+  padding: var(--spacing-400);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  gap: var(--spacing-400);
+  border-radius: 1.5rem;
+  width: 100%;
+  
+  
+  max-width: 856px;
+}
+
+/* form */
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+}
+
+.form__field{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+  position: relative;
+}
+
+.form__error{
+  position: absolute;
+  right: 0;
+  color: var(--color-orange-400);
+}
+
+.form__label{
+  color: var(--color-grey-500);
+}
+
+.form__input{
+  background-color: var(--color-grey-50);
+  border: none;
+  border-radius: 5px;
+  padding: var(--spacing-100) var(--spacing-200);
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  cursor: pointer;
+  outline: none;
+  text-align: right;
+  color: var(--color-green-900);
+}
+
+.form__input:focus{
+  outline: 2px solid var(--color-green-400);
+}
+
+.form__input--error{
+  outline: 2px solid var(--color-orange-400);
+}
+
+/* Chrome, Safari, Edge, Opera */
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button,
+.form__custom-input::-webkit-outer-spin-button,
+.form__custom-input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.form__input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form__input-container{
+  position: relative;
+  display: flex;
+}
+
+.form__icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+}
+
+.form__buttons{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+
+.form__buttons-group{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-200);
+}
+
+.form__button{
+  color: var(--color-white);
+  background-color: var(--color-green-900);
+  border: none;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.form__button:hover{
+  background-color: var(--color-green-200);
+  color: var(--color-green-900);
+  cursor: pointer;
+}
+
+.form__button--active{
+  background-color: var(--color-green-400);
+}
+
+
+.form__custom-input{
+  background-color: var(--color-grey-50);
+  border: none;
+  border-radius: 5px;
+  
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  color: var(--color-grey-550);
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.form__custom-input:focus{
+  outline: 2px solid var(--color-green-400);
+}
+
+.app__outputs-section{
+  padding: var(--spacing-300);
+  background-color: var(--color-green-900);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  border-radius: 1rem;
+}
+
+.output-card-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.output-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-card__meta{
+  display: flex;
+  flex-direction: column;
+}
+
+.output-card__unit{
+  color: var(--color-grey-400);
+}
+
+.output-card__amount{
+  color: var(--color-green-400);
+}
+
+.app__output-reset-btn{
+  background-color: var(--color-green-750);
+  color: var(--color-green-900);
+  
+  border-radius: 5px;
+  border: none;
+  padding: var(--spacing-100);
+  cursor: pointer;
+}
+
+.app__output-reset-btn:hover{
+  background-color: var(--color-green-200);
+}
+
+.app__output-reset-btn--active{
+  background-color: var(--color-green-400);
+}
+
+@media (min-width: 768px) {
+  .app-wrapper{
+    padding: 50px var(--spacing-1000) var(--spacing-1000) var(--spacing-1000);
+  }
+  
+  .form__buttons-group{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-nav{
+    margin-top: 0;
+  }
+  
+  .app-wrapper{
+    gap: 88px;
+    min-height: 100vh;
+    justify-content: center;
+  }
+  
+  .app{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-600);
+  }
+  
+  .app__outputs-section{
+    justify-content: space-between;
+    padding: var(--spacing-300) var(--spacing-400);
+  }
+  
+  .output-card__amount{
+    font-size: 3rem;
+  }
+}
+
+.hidden{
+  display: none;
+}
