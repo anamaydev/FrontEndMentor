@@ -31,5 +31,8 @@
 ### 10. Newsletter Sign Up with Success message 
 [https://anamaydev.github.io/FrontEndMentor/newsletter-sign-up/index.html](https://anamaydev.github.io/FrontEndMentor/newsletter-sign-up/index.html)
 
-## 11. Time Tracking Dashboard
+### 11. Time Tracking Dashboard
 [https://anamaydev.github.io/FrontEndMentor/time-tracking-dashboard/index.html](https://anamaydev.github.io/FrontEndMentor/time-tracking-dashboard/index.html)
+
+### 12. Tip Calculator App
+[https://anamaydev.github.io/FrontEndMentor/tip-calculator-app/index.html](https://anamaydev.github.io/FrontEndMentor/tip-calculator-app/index.html)
