@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../assets/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+:root{
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-black: hsla(0, 0%, 0%, 1);
+  --color-grey-950: hsla(255, 22%, 4%, 1);
+  --color-grey-900: hsla(248, 17%, 9%, 1);
+  --color-grey-850: hsla(248, 15%, 11%, 1);
+  --color-grey-800: hsla(247, 11%, 15%, 1);
+  --color-grey-700: hsla(248, 5%, 34%, 1);
+  --color-grey-600: hsla(251, 9%, 53%, 1);
+  --color-grey-200: hsla(252, 11%, 91%, 1);
+  --color-green-200: hsla(127, 100%, 82%, 1);
+  --color-yellow-300: hsla(42, 91%, 68%, 1);
+  --color-orange-400: hsla(13, 95%, 66%, 1);
+  --color-red-500: hsla(0, 91%, 63%, 1);
+  
+  --spacing-2300: 11.5rem;  /* 184px */
+  --spacing-2200: 11rem;    /* 176px */
+  --spacing-2000: 10rem;    /* 160px */
+  --spacing-1600: 8rem;     /* 128px */
+  --spacing-1300: 6.5rem;   /* 104px */
+  --spacing-1000: 5rem;     /*  80px */
+  --spacing-700: 3.5rem;    /*  55px */
+  --spacing-400: 2rem;      /*  32px */
+  --spacing-300: 1.5rem;    /*  24px */
+  --spacing-200: 1rem;      /*  16px */
+  --spacing-100: 0.5rem;    /*   8px */
+}
+
+.text-preset-1{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 2rem; /* 32px */
+  line-height: 1.31;
+  letter-spacing: 0;
+}
+
+.text-preset-2{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.33;
+  letter-spacing: 0;
+}
+
+.text-preset-3{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.33;
+  letter-spacing: 0;
+}
+
+.text-preset-4{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1rem; /* 16px */
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.page{
+  background-image: linear-gradient(hsla(248, 17%, 9%, 1), hsla(255, 22%, 4%, 1));
+  color: var(--color-white);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--spacing-200);
+}
+
+/* app main container */
+.app{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+  width: 100%;
+  max-width: 540px;
+}
+
+.app__name{
+  text-align: center;
+  color: var(--color-grey-600);
+}
+
+/* app body */
+.app__content{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+}
+
+/* app output section */
+.app__output{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-200);
+  background-color: var(--color-grey-800);
+}
+
+.app__output-field{
+  background-color: transparent;
+  border: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.app__output-button{
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+/* app input section */
+.app__controls{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  background-color: var(--color-grey-800);
+  padding: var(--spacing-200);
+}
+
+.app__range{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+
+.app__range-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__range-slider{
+  appearance: none;
+  -webkit-appearance: none;
+  background: linear-gradient(90deg, var(--color-green-200) 50%, var(--color-grey-850) 50%);
+  height: 0.5rem;
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+
+.app__range-slider::-webkit-slider-thumb{
+  appearance: none;
+  -webkit-appearance: none;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: var(--color-grey-200);
+  border-radius: 50%;
+}
+
+.app__range-slider:active::-webkit-slider-thumb{
+  border: 2px solid var(--color-green-200);
+  background-color: var(--color-grey-850);
+}
+
+.app__checkboxes{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+}
+
+.app__checkbox-input{
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.app__checkbox-label{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+  cursor: pointer;
+}
+
+.app__checkbox-icon-wrapper{
+  height: 1.25em;
+  width: 1.25em;
+  border: 2px solid var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__checkbox-icon-wrapper:hover{
+  border: 2px solid var(--color-green-200);
+}
+
+.app__checkbox-icon{
+  display: none;
+}
+
+.app__checkbox-input:checked + .app__checkbox-label .app__checkbox-icon-wrapper {
+  background-color: var(--color-green-200);
+  border-color: var(--color-green-200);
+}
+.app__checkbox-input:checked + .app__checkbox-label .app__checkbox-icon{
+  display: block;
+}
+
+/* password strength */
+.app__strength{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+}
+
+.app__strength-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__strength-label{
+  color: var(--color-grey-600);
+}
+
+.app__strength-indicator{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+  /*justify-content: space-between;*/
+}
+
+.app__strength-bars{
+  display: flex;
+  gap: var(--spacing-100);
+}
+
+.app__strength-bar{
+  height: 1.75rem;
+  width: 0.625rem;
+  border: 2px solid var(--color-white);
+}
+
+.app__strength-bar--filled{
+  background-color: var(--color-yellow-300);
+  border-color: var(--color-yellow-300);
+}
+
+.app__generate-button{
+  display: flex;
+  gap: var(--spacing-300);
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--spacing-200);
+  padding-bottom: var(--spacing-200);
+  background-color: var(--color-green-200);
+  border: none;
+}
+
