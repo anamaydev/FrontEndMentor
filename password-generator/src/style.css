@@ -241,9 +241,24 @@
   border: 2px solid var(--color-white);
 }
 
-.app__strength-bar--filled{
+.app__strength-bar--too-weak{
+  background-color: var(--color-red-500);
+  border-color: var(--color-red-500);
+}
+
+.app__strength-bar--weak{
+  background-color: var(--color-orange-400);
+  border-color: var(--color-orange-400);
+}
+
+.app__strength-bar--medium{
   background-color: var(--color-yellow-300);
   border-color: var(--color-yellow-300);
+}
+
+.app__strength-bar--strong{
+  background-color: var(--color-green-200);
+  border-color: var(--color-green-200);
 }
 
 .app__generate-button{
@@ -254,6 +269,16 @@
   padding-top: var(--spacing-200);
   padding-bottom: var(--spacing-200);
   background-color: var(--color-green-200);
-  border: none;
+  border: 2px solid transparent;
 }
 
+
+.app__generate-button:hover{
+  color: var(--color-green-200);
+  background-color: var(--color-grey-800);
+  border: 2px solid var(--color-green-200);
+}
+
+.app__generate-button:hover path{
+  fill: var(--color-green-200);
+}
