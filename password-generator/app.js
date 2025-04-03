@@ -22,6 +22,7 @@ function init(){
 
   // display strength level
   function addStrengthLevel(){
+    strengthLevel.hidden= false;
     switch (strength){
       case 0:
         strengthLevel.hidden= true;
