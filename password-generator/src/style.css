@@ -111,6 +111,11 @@
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 0;
+  color: var(--color-white);
+}
+
+.app__output-field:focus{
+  outline: none;
 }
 
 .app__output-button{
@@ -277,6 +282,7 @@
   color: var(--color-green-200);
   background-color: var(--color-grey-800);
   border: 2px solid var(--color-green-200);
+  cursor: pointer;
 }
 
 .app__generate-button:hover path{
