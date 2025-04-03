@@ -36,3 +36,6 @@
 
 ### 12. Tip Calculator App
 [https://anamaydev.github.io/FrontEndMentor/tip-calculator-app/index.html](https://anamaydev.github.io/FrontEndMentor/tip-calculator-app/index.html)
+
+### 13. Password Generator 
+[https://anamaydev.github.io/FrontEndMentor/password-generator/index.html](https://anamaydev.github.io/FrontEndMentor/password-generator/index.html)
