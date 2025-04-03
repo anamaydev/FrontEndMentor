@@ -122,6 +122,20 @@
   border: none;
   padding: 0;
   background: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.app__output-button--copied:before{
+  content: 'Copied!';
+  position: absolute;
+  color: var(--color-green-200);
+  left: -5.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.33;
+  letter-spacing: 0;
 }
 
 /* app input section */
