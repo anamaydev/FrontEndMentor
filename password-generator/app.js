@@ -111,7 +111,7 @@ function init(){
       }else if(checkedIds[selectedIdIndex] === 'number-checkbox'){
         password += numbers[generateRandomIndex(numbers.length)];
       }else if(checkedIds[selectedIdIndex] === 'symbol-checkbox'){
-        password += numbers[generateRandomIndex(symbols.length)];
+        password += symbols[generateRandomIndex(symbols.length)];
       }
     }
     // embed generated password to HTML
