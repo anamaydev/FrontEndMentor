@@ -3,6 +3,7 @@ function init(){
   const charSlider = document.getElementById('char-length');
   const charLength = document.querySelector('.app__range-value');
   const genPassBtn = document.getElementById("generate-password-btn");
+  const copyBtn = document.getElementById("copy-btn");
 
   const checkboxes = document.querySelectorAll('.app__checkbox-input');
   const strengthLevel = document.querySelector('.app__strength-level');
@@ -14,7 +15,7 @@ function init(){
   const uppercases = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   const lowercases = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  const symbols = ['!', '@', '#', '$', '%', '^', '&', '*'];
+  const symbols = ['!', '@', '#', '$', '%', '&', '*'];
 
   let strength = 0;
   let password = '';
@@ -130,11 +131,22 @@ function init(){
     charSlider.style.background = `linear-gradient(90deg, var(--color-green-200) ${charSlider.value}%, var(--color-grey-850) ${charSlider.value}%)`
     charLength.innerText = Math.floor((charSlider.value/100)*20);
   })
+
   genPassBtn.addEventListener('click', () => {
     // reset the string before generating
     password = "";
     // generate new password and append the output to HTML
     generatePassword();
+  })
+
+  copyBtn.addEventListener('click', async () => {
+    await navigator.clipboard.writeText(passwordField.value);
+
+    // display copy popup
+    copyBtn.classList.add('app__output-button--copied');
+    setTimeout(()=>{
+      copyBtn.classList.remove('app__output-button--copied');
+    },2000)
   })
 }
 
